@@ -1,11 +1,9 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
-import AdminDashboard from './pages/admin/Dashboard';
-import AdminProducts from './pages/admin/Products';
-import AdminOrders from './pages/admin/Orders';
-import AdminCustomers from './pages/admin/Customers';
-import AdminSettings from './pages/admin/Settings';
+import Dashboard from './pages/admin/Dashboard';
+import Products from './pages/admin/Products';
+import Orders from './pages/admin/Orders';
 import Shop from './pages/user/Shop';
 import Cart from './pages/user/Cart';
 import Profile from './pages/user/Profile';
@@ -20,8 +18,6 @@ function App() {
           <Route path="admin" element={<AdminDashboard />} />
           <Route path="admin/products" element={<AdminProducts />} />
           <Route path="admin/orders" element={<AdminOrders />} />
-          <Route path="admin/customers" element={<AdminCustomers />} />
-          <Route path="admin/settings" element={<AdminSettings />} />
 
           {/* User Routes */}
           <Route index element={<Shop />} />
